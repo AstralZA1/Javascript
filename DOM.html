@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--image view container-->
+    <div class="row">
+        <div class="col-3">
+            <!--blank-->
+        </div>
+        <div class="col-6">
+            <div id="picContainer">
+                <div class="row">
+                    <div class="col-8">
+                        <img id="imgViewer" class="prev">
+                    </div>
+                    <div class="col-4">
+                        <!--title and description-->
+                        <h3 id="topicTtl">Title:</h3>
+                        <p id="topicDescrpt">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <!--blank-->
+        </div>
+    </div>
+    <!--hover or clicked to display-->
+    <div class="row">
+        <div class="col-3">
+            <!--blank-->
+        </div>
+        <div class="col-2">
+            <div class="optContainer">
+                <img id="imgOption1" alt="no image" src="bom.png" class="imgSelected" onmouseover="previewImg(this)">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="optContainer">
+                <img id="imgOption2" alt="no image" src="dom.png" class="imgSelected" onmouseover="previewImg(this)">
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="optContainer">
+                <img id="imgOption3" alt="no image" src="intro.png" class="imgSelected" onmouseover="previewImg(this)">
+            </div>
+        </div>
+        <div class="col-3">
+            <!--blank-->
+        </div>
+    </div>
+</body>
+</html>
